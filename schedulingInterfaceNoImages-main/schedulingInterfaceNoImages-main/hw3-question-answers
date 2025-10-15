@@ -1,4 +1,13 @@
 1. What does .. and -R mean?
 
+    ..
 
+    This signifies the parent directory (one level up from current).
+
+    -R
+
+    This tells the cp to copy the whole directory, not just a particular file.
+
+To summarize: The command tells the cp to copy the entire public_html folder from
+the parent directory into the currently selected directory.
 
