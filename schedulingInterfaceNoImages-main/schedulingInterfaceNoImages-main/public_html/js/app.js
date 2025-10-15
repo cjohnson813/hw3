@@ -30,6 +30,7 @@ let serverObj =  http.createServer(function(req,res){
 			break;
 		// replaced error with a map for serving index.html based on "/"
 		default:
+			// serve static file
 			const filePath = urlObj.pathname === "/" ? "./index.html" : "." + urlObj.pathname;
 			sendFile(res, filePath);
 	}
